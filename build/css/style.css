@@ -533,3 +533,27 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.font-\[\] {
+  font-family: ;
+}
+
+.font-\[\'open\'\] {
+  font-family: 'open';
+}
+
+.font-\[\'\'\] {
+  font-family: '';
+}
+
+.font-\[\'raleway\'\] {
+  font-family: 'raleway';
+}
+
+.font-\[\'Open-Sans\'\] {
+  font-family: 'Open-Sans';
+}
+
+.font-\[\'OpenSans\'\] {
+  font-family: 'OpenSans';
+}
