@@ -12,9 +12,52 @@
     <title>Burj AL Sanab</title>
 </head>
 
-<body class="font-['Open Sans']">
-    <h2>hello world</h2>
+<body class="font-['Open Sans'] dark:bg-gray-800 dark:text-white">
+    <header class="h-screen w-full bg-blue-600 bg-opacity-80 bg-[url('/build/img/header.jpg')] bg-cover bg-center">
+        <nav class="max-w-7xl mx-auto z-10 p-5 shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl cursor-pointer">
+                <img class="h-20 inline"
+                  src="./build/img/logo.png">
+              </span>
+        
+              <span class="text-3xl z-50 cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex md:items-center z-[9] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#home" class="text-xl hover:text-cyan-500 duration-500 capitalize">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#about" class="text-xl hover:text-cyan-500 duration-500 capitalize">about</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#products" class="text-xl hover:text-cyan-500 duration-500 capitalize">products</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#services" class="text-xl hover:text-cyan-500 duration-500 capitalize">services</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#contact" class="text-xl hover:text-cyan-500 duration-500 capitalize">contact</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="grid place-content-center h-screen text-center">
+            <h1 class="text-5xl md:text-8xl capitalize font-bold leading text-yellow">Your trusted <br> steel partner</h1>
+            <a href="#" class="text-center text-2xl p-3 bg-yellow hover:bg-opacity-70 duration-200 ease-in transition-all font-semibold rounded-lg w-48 mx-auto text-black mt-10">Get Quote</a>
+        </div>
+    </header>
     <script src="./build/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function Menu(e){
+  let list = document.querySelector('ul');
+  e.name === 'menu' ? (e.name = "close",list.classList.add('top-[0px]') , list.classList.add('bg-black'), list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+}
+</script>
 </body>
 
 </html>
